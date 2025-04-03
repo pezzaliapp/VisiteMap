@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisiteMap</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>VisiteMap</h1>
+  </header>
+  <main>
+    <form id="visitaForm">
+      <input type="text" id="cliente" placeholder="Cliente" required />
+      <input type="text" id="indirizzo" placeholder="Indirizzo" required />
+      <input type="datetime-local" id="data" required />
+      <textarea id="note" placeholder="Note (opzionale)"></textarea>
+      <button type="submit">Aggiungi visita</button>
+    </form>
+    <section>
+      <h2>Visite salvate</h2>
+      <ul id="listaVisite"></ul>
+    </section>
+    <button id="mostraMappa">Mostra su mappa</button>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
